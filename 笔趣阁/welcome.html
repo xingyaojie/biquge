@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="M4uRM5warzqoNjyo0GBTRy">
+<head data-page-node-id="HGfdsCrCWYLCYxWx4kkqDi">
+    <meta charset="UTF-8" data-page-node-id="5OozcFOfPuS2VmipP6K4jc">
+    <title>请在浏览器中打开 </title>
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" data-page-node-id="l2E4NDyYgrhWpc373rD6m3">
+    <meta content="yes" name="apple-mobile-web-app-capable" data-page-node-id="aIEOSt8cUzFFbLF9BJxPVX">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" data-page-node-id="ukPU7rguvp3WWOk1KwG7nh">
+    <meta name="format-detection" content="telephone=no" data-page-node-id="fqzFwEzXIemnfGH1XfusPe">
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
+            color: #334155;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            inset: -20% -20%;
+            background:
+                radial-gradient(600px 600px at 20% 15%, rgba(23, 152, 252, 0.12), transparent 60%),
+                radial-gradient(700px 700px at 85% 35%, rgba(0, 86, 179, 0.10), transparent 60%),
+                radial-gradient(500px 500px at 50% 85%, rgba(255, 255, 255, 0.25), transparent 60%);
+            filter: blur(8px);
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(23, 152, 252, 0.15);
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(23, 152, 252, 0.08);
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .header p {
+            opacity: 0.9;
+            font-size: 14px;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .guide-box {
+            background: #f1f5f9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 24px;
+            text-align: center;
+        }
+
+        .guide-icon {
+            width: 48px;
+            height: 48px;
+            background: #3b82f6;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 24px;
+        }
+
+        .guide-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 8px;
+        }
+
+        .guide-desc {
+            font-size: 14px;
+            color: #64748b;
+            line-height: 1.5;
+        }
+
+        .steps {
+            margin: 24px 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            width: 24px;
+            height: 24px;
+            background: #3b82f6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+
+        .step-text {
+            font-size: 14px;
+            color: #475569;
+        }
+
+        .copy-section {
+            margin-top: 24px;
+            text-align: center;
+        }
+
+        .copy-btn {
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 24px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        .copy-btn:hover {
+            background: #2563eb;
+            transform: translateY(-1px);
+        }
+
+        .copy-btn:active {
+            transform: translateY(0);
+        }
+
+        .copy-btn.success {
+            background: #10b981;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px 30px;
+            background: #f8fafc;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+
+        .wechat .guide-icon {
+            background: #07c160;
+        }
+
+        .qq .guide-icon {
+            background: #12b7f5;
+        }
+
+        .hidden {
+            display: none !important;
+        }
+
+        #wechat-guide,
+        #qq-guide,
+        #default-guide {
+            display: none;
+        }
+
+        .container {
+            opacity: 0;
+            transition: opacity 0.3s ease-out;
+        }
+
+        .container.loaded {
+            opacity: 1;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px 20px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body data-page-node-id="SH971ifpQZ2EdoYZI1k4SF">
+    <div class="container" id="container" data-page-node-id="6XNLNjFzCMQkG7EYjzJhSH">
+        <div class="header" data-page-node-id="1KJQcHvqezf7JXGxGlMBhE">
+            <h1 data-page-node-id="3liALxToXv3YlbGND6daJG">臻好看影视:为了更好的观影体验</h1>
+            <p id="header-desc" data-page-node-id="4fcHrwqMJrV1xNIOeDSR9O">请在浏览器中打开本站 hkj.app</p>
+        </div>
+
+        <div class="content" data-page-node-id="6rh8fBMRCgJiQYn7Ca6ebW">
+            <div id="wechat-guide" class="hidden" data-page-node-id="ZeceVPTCbaYI2RgE6XniYM">
+                <div class="guide-box" data-page-node-id="lMBINelEGXUiEvCqADZ0n0">
+                    <div class="guide-icon" data-page-node-id="kJLmD7F1MBmNAVhae12OGe">📱</div>
+                    <div class="guide-title" data-page-node-id="IYLxeH9nP5HBZhjiEyDX1O">用户操作指南</div>
+                    <div class="guide-desc" data-page-node-id="gyZjla8mXwANDTkNygO3PJ">点击右上角菜单，选择在浏览器中打开</div>
+                </div>
+                <div class="steps" data-page-node-id="uG3wpSoVgbYGRKbDxOUQBC">
+                    <div class="step" data-page-node-id="aFCx8RNA7AqNR3ooLWlDX3">
+                        <div class="step-number" data-page-node-id="70JsoTVTGBTQqRscjaYS6E">1</div>
+                        <div class="step-text" data-page-node-id="qwLOhD142v2RGhg5sTNbR8">点击右上角 <strong data-page-node-id="jxszDRuB2AD6orsiCHWfJk">···</strong> 菜单</div>
+                    </div>
+                    <div class="step" data-page-node-id="28BhcKuZS5qa2ZJeLlX32Z">
+                        <div class="step-number" data-page-node-id="fS05PvCj2e0iGBr9lE0ix9">2</div>
+                        <div class="step-text" data-page-node-id="LprZZug7zrketXMh9hUQoc">选择 <strong data-page-node-id="rRcEmSCmx2nGm98aAGlgNq">在浏览器中打开</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="qq-guide" class="hidden" data-page-node-id="BKC4QHUWy0qDVYp5JwNA6u">
+                <div class="guide-box" data-page-node-id="L9A3GJ3Pz79BCd9FF7W1dK">
+                    <div class="guide-icon" data-page-node-id="RqPHLSJ49HwZIiVjHzzg92">🌐</div>
+                    <div class="guide-title" data-page-node-id="hHjMYmf3DK3BMDVAiSvYf6">用户操作指南</div>
+                    <div class="guide-desc" data-page-node-id="B6mM0BpXl00EZvj1rmj9La">点击右上角菜单，选择在浏览器中打开</div>
+                </div>
+                <div class="steps" data-page-node-id="QXglJDSPYDlKiQQ7FajSl2">
+                    <div class="step" data-page-node-id="kF5co0SpHgc49p1CtxGk9v">
+                        <div class="step-number" data-page-node-id="iwkv9bGA4EgD969vl1nsZk">1</div>
+                        <div class="step-text" data-page-node-id="D6MFtiFOABI1WAmEk0wa7V">点击右上角 <strong data-page-node-id="mtsaQ3VLwWylL0hrNP9iVl">···</strong> 菜单</div>
+                    </div>
+                    <div class="step" data-page-node-id="SBPTBfvJ7FFuZFNUibZnub">
+                        <div class="step-number" data-page-node-id="AqYjr2BZJtVBEo0uU3EzEV">2</div>
+                        <div class="step-text" data-page-node-id="f1cylWXg4Gu7kWhNtSew1a">选择 <strong data-page-node-id="BfvBrhT9tVxV3j8QdyQkw4">在浏览器打开</strong></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="default-guide" class="hidden" data-page-node-id="9mMjjN7hCPHevFgXxOvMhg">
+                <div class="guide-box" data-page-node-id="2ZCVrjDjHaAeUS6VDxQV5E">
+                    <div class="guide-icon" data-page-node-id="R6lqcwUjbQx29H6P8B3sPK">🚀</div>
+                    <div class="guide-title" data-page-node-id="YwZsYAl4MnFJWdJDVibcHD">获得最佳体验</div>
+                    <div id="default-guide-desc" class="guide-desc" data-page-node-id="Ka5HkOWaIE4GjGMrGskhRB">复制链接https://hkan8.app到浏览器中打开，享受流畅观影</div>
+                </div>
+                <div class="steps" data-page-node-id="1narQfvvCcT34QlHFcrYm5">
+                    <div class="step" data-page-node-id="d80CuDtz0UjHZRGctcFX9n">
+                        <div class="step-number" data-page-node-id="WUtH6A0dw4oiOE92c9l2Xg">1</div>
+                        <div class="step-text" data-page-node-id="DuDP2OAdPZf7GGY8jpnUCv">点击下方 <strong data-page-node-id="DFOfBeevFhLpdAQF3CVVyT">复制链接</strong> 按钮</div>
+                    </div>
+                    <div class="step" data-page-node-id="AQ5XaetHH0PwZlREhjgyBD">
+                        <div class="step-number" data-page-node-id="vTg9cTwZX40m2Cb7oMDa8S">2</div>
+                        <div class="step-text" data-page-node-id="86NCNtfMZwz49OJbIQulpq">打开浏览器，粘贴链接访问</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy-section" data-page-node-id="tiPkJKn91Tz8ExD1PJ2V13">
+                <button class="copy-btn"  id="copy-btn" data-page-node-id="DJveN6gDEq0e99gM6DiHEw">
+                    复制链接
+                </button>
+            </div>
+        </div>
+
+        <div class="footer" data-page-node-id="BwFGi1cuOzNS1Yyx5h9ilP">
+            感谢您的理解与支持
+        </div>
+    </div>
+
+    <a style="display: none;" href="" id="vurl" rel="noreferrer" data-page-node-id="8LZMYG68YUXWfrgGNGdUD4"></a>
+
+    <link href="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/theme/default/layer.css" rel="stylesheet" type="text/css" data-page-node-id="UIYOSti9t0naFeodgYKQNW" />
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/layer/3.5.1/layer.min.js"></script>
+
+    <script>
+    const hostname = window.location.origin;
+    (function() {
+        var userAgent = navigator.userAgent;
+        var isWeChat = /MicroMessenger|micromessenger|WeChat|WindowsWechat/i.test(userAgent);
+        var isQQ = /QQ\/|qq\/|MQQBrowser/i.test(userAgent);
+
+        console.log('User Agent:', userAgent);
+        console.log('Is WeChat:', isWeChat);
+        console.log('Is QQ:', isQQ);
+
+        var wechatGuide = document.getElementById('wechat-guide');
+        var qqGuide = document.getElementById('qq-guide');
+        var defaultGuide = document.getElementById('default-guide');
+        const defaultGuideDesc = defaultGuide.querySelector('.guide-desc');
+        const headerDesc = document.querySelector("#header-desc");
+
+        document.title = `请在浏览器中打开 - ${hostname}`;
+        headerDesc.innerHTML = `请在浏览器中打开本站 ${hostname}`;
+
+        if (isWeChat) {
+            console.log('检测到微信环境，显示微信引导');
+            if (wechatGuide) {
+                wechatGuide.classList.remove('hidden');
+                wechatGuide.style.display = 'block';
+            }
+            document.body.className = 'wechat';
+        } else if (isQQ) {
+            console.log('检测到QQ环境，显示QQ引导');
+            if (qqGuide) {
+                qqGuide.classList.remove('hidden');
+                qqGuide.style.display = 'block';
+            }
+            document.body.className = 'qq';
+        } else {
+            console.log('显示默认环境');
+            if (defaultGuide) {
+                defaultGuideDesc.innerHTML = `复制链接${hostname}到浏览器中打开，享受流畅观影`;
+                defaultGuide.classList.remove('hidden');
+                defaultGuide.style.display = 'block';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.container').classList.add('loaded');
+        });
+    })();
+
+    $(document).ready(function() {
+        var userAgent = navigator.userAgent;
+        var isWeChat = /MicroMessenger|micromessenger|WeChat|WindowsWechat/i.test(userAgent);
+        var isQQ = /QQ\/|qq\/|MQQBrowser/i.test(userAgent);
+        var isDouyin = /aweme|bytedance/i.test(userAgent);
+        var isKuaishou = /kwai/i.test(userAgent);
+
+        if (isWeChat) {
+            tryOpenBrowser();
+        } else if (isQQ) {
+            tryOpenBrowser();
+            $(document).on('click touchstart', tryOpenBrowser);
+        }else if(isDouyin || isKuaishou){
+
+        }else{
+            window.location.href = '/';
+        }
+
+        var clipboard = new ClipboardJS('#copy-btn',{text: function(){
+            return hostname;
+        }});
+
+        clipboard.on('success', function(e) {
+            var $btn = $('#copy-btn');
+            $btn.addClass('success').text('复制成功');
+
+            layer.msg('链接已复制，请粘贴到浏览器打开', {
+                icon: 1,
+                time: 2000
+            });
+
+            setTimeout(function() {
+                $btn.removeClass('success').text('复制链接');
+            }, 3000);
+        });
+
+        clipboard.on('error', function(e) {
+            layer.msg(`复制失败，请手动复制链接 ${hostname}`, {
+                icon: 2,
+                time: 2000
+            });
+        });
+    });
+
+    function tryOpenBrowser() {
+        var url = window.location.href;
+        var schemes = [
+            "ucbrowser://" + url,
+            "mttbrowser://url=" + url,
+            "baiduboxapp://browse?url=" + url,
+            "googlechrome://browse?url=" + url,
+            "mibrowser:" + url
+        ];
+
+        schemes.forEach(function(scheme, index) {
+            setTimeout(function() {
+                $('#vurl').attr('href', scheme)[0].click();
+            }, index * 50);
+        });
+    }
+    </script>
+</body>
+</html>
